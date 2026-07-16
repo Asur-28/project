@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Healthcare Diagnosis Assistant</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>🏥 AI Healthcare Diagnosis Assistant</h1>
+
+<p class="subtitle">
+Enter Patient Details & Symptoms
+</p>
+
+<form action="/predict" method="POST">
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Age</label>
+
+<input
+type="number"
+name="Age"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Patient Name</label>
+
+<input type="text" name="name" required>
+
+<label>Gender</label>
+
+<select name="Gender">
+
+<option value="Male">Male</option>
+
+<option value="Female">Female</option>
+
+</select>
+
+</div>
+
+</div>
+
+<h2>Select Symptoms</h2>
+
+<div class="symptoms">
+
+<label><input type="checkbox" name="symptoms" value="fever"> Fever</label>
+
+<label><input type="checkbox" name="symptoms" value="cough"> Cough</label>
+
+<label><input type="checkbox" name="symptoms" value="fatigue"> Fatigue</label>
+
+<label><input type="checkbox" name="symptoms" value="headache"> Headache</label>
+
+<label><input type="checkbox" name="symptoms" value="vomiting"> Vomiting</label>
+
+<label><input type="checkbox" name="symptoms" value="nausea"> Nausea</label>
+
+<label><input type="checkbox" name="symptoms" value="abdominal_pain"> Abdominal Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="anxiety"> Anxiety</label>
+
+<label><input type="checkbox" name="symptoms" value="back_pain"> Back Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="bloating"> Bloating</label>
+
+<label><input type="checkbox" name="symptoms" value="blurred_vision"> Blurred Vision</label>
+
+<label><input type="checkbox" name="symptoms" value="body_pain"> Body Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="burning_urination"> Burning Urination</label>
+
+<label><input type="checkbox" name="symptoms" value="chest_pain"> Chest Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="chills"> Chills</label>
+
+<label><input type="checkbox" name="symptoms" value="cold_hands"> Cold Hands</label>
+
+<label><input type="checkbox" name="symptoms" value="confusion"> Confusion</label>
+
+<label><input type="checkbox" name="symptoms" value="constipation"> Constipation</label>
+
+<label><input type="checkbox" name="symptoms" value="dark_urine"> Dark Urine</label>
+
+<label><input type="checkbox" name="symptoms" value="diarrhea"> Diarrhea</label>
+
+<label><input type="checkbox" name="symptoms" value="dizziness"> Dizziness</label>
+
+<label><input type="checkbox" name="symptoms" value="dry_mouth"> Dry Mouth</label>
+
+<label><input type="checkbox" name="symptoms" value="ear_pain"> Ear Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="eye_redness"> Eye Redness</label>
+
+<label><input type="checkbox" name="symptoms" value="fainting"> Fainting</label>
+
+<label><input type="checkbox" name="symptoms" value="frequent_urination"> Frequent Urination</label>
+
+<label><input type="checkbox" name="symptoms" value="heartburn"> Heartburn</label>
+
+<label><input type="checkbox" name="symptoms" value="insomnia"> Insomnia</label>
+
+<label><input type="checkbox" name="symptoms" value="itching"> Itching</label>
+
+<label><input type="checkbox" name="symptoms" value="joint_pain"> Joint Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="loss_of_appetite"> Loss of Appetite</label>
+
+<label><input type="checkbox" name="symptoms" value="loss_of_smell"> Loss of Smell</label>
+
+<label><input type="checkbox" name="symptoms" value="muscle_pain"> Muscle Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="neck_pain"> Neck Pain</label>
+
+<label><input type="checkbox" name="symptoms" value="palpitations"> Palpitations</label>
+
+<label><input type="checkbox" name="symptoms" value="rash"> Rash</label>
+
+<label><input type="checkbox" name="symptoms" value="runny_nose"> Runny Nose</label>
+
+<label><input type="checkbox" name="symptoms" value="sensitivity_to_light"> Sensitivity To Light</label>
+
+<label><input type="checkbox" name="symptoms" value="shortness_of_breath"> Shortness of Breath</label>
+
+<label><input type="checkbox" name="symptoms" value="skin_peeling"> Skin Peeling</label>
+
+<label><input type="checkbox" name="symptoms" value="sore_throat"> Sore Throat</label>
+
+<label><input type="checkbox" name="symptoms" value="stomach_cramps"> Stomach Cramps</label>
+
+<label><input type="checkbox" name="symptoms" value="sweating"> Sweating</label>
+
+<label><input type="checkbox" name="symptoms" value="swollen_glands"> Swollen Glands</label>
+
+<label><input type="checkbox" name="symptoms" value="weight_gain"> Weight Gain</label>
+
+<label><input type="checkbox" name="symptoms" value="weight_loss"> Weight Loss</label>
+
+<label><input type="checkbox" name="symptoms" value="wheezing"> Wheezing</label>
+
+<label><input type="checkbox" name="symptoms" value="yellow_skin"> Yellow Skin</label>
+
+</div>
+
+<button>
+
+🔍 Predict Disease
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

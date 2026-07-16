@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Healthcare Diagnosis Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+
+        body{
+            background:#eef5ff;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .result-card{
+
+            width:750px;
+
+            margin:60px auto;
+
+            background:white;
+
+            padding:40px;
+
+            border-radius:20px;
+
+            box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+        }
+
+        h1{
+
+            text-align:center;
+
+            color:#0d6efd;
+
+            margin-bottom:20px;
+
+        }
+
+        .disease{
+
+            color:#198754;
+
+            text-align:center;
+
+            font-size:36px;
+
+            margin:20px 0;
+
+        }
+
+        .confidence{
+
+            text-align:center;
+
+            font-size:22px;
+
+            color:#0d6efd;
+
+            margin-bottom:30px;
+
+        }
+
+        .section{
+
+            background:#f8f9fa;
+
+            padding:20px;
+
+            margin-top:20px;
+
+            border-radius:10px;
+
+        }
+
+        .section h3{
+
+            color:#0d6efd;
+
+            margin-bottom:10px;
+
+        }
+
+        .section p{
+
+            font-size:17px;
+
+            line-height:28px;
+
+        }
+
+        .warning{
+
+            margin-top:30px;
+
+            padding:15px;
+
+            background:#fff3cd;
+
+            border-left:6px solid orange;
+
+            border-radius:10px;
+
+        }
+
+        .btn{
+
+            display:block;
+
+            width:250px;
+
+            margin:35px auto;
+
+            text-align:center;
+
+            text-decoration:none;
+
+            background:#0d6efd;
+
+            color:white;
+
+            padding:15px;
+
+            border-radius:10px;
+
+            font-size:18px;
+
+        }
+
+        .btn:hover{
+
+            background:#084298;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="result-card">
+
+<h1>🏥 AI Healthcare Diagnosis Result</h1>
+
+<hr>
+
+<h2 class="disease">
+
+{{ disease }}
+
+</h2>
+
+<h3 class="confidence">
+
+Prediction Confidence : {{ confidence }} %
+
+</h3>
+
+<div class="section">
+
+<h3>📖 Disease Description</h3>
+
+<p>
+
+{{ description }}
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h3>💊 Recommended Medicine</h3>
+
+<p>
+
+{{ medicine }}
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h3>🛡 Precautions</h3>
+
+<p>
+
+{{ precaution }}
+
+</p>
+
+</div>
+
+<div class="warning">
+
+<strong>⚠ Disclaimer</strong>
+
+<p>
+
+This AI prediction is generated using a Machine Learning model and is intended for educational purposes only.
+
+Always consult a qualified healthcare professional before taking any medicine or making medical decisions.
+
+</p>
+
+</div>
+
+<a href="/" class="btn">
+
+🔍 Predict Again
+
+</a>
+
+</div>
+
+</body>
+
+</html>
