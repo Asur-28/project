@@ -1,3 +1,7 @@
+<img width="575" height="702" alt="Output" src="https://github.com/user-attachments/assets/7454464c-5a02-452b-af67-cfab2f6562eb" />
+<img width="1450" height="516" alt="Iterface" src="https://github.com/user-attachments/assets/3451475e-d74a-4f80-aa06-4752fca1fb30" />
+<img width="1442" height="483" alt="Input" src="https://github.com/user-attachments/assets/62c9c386-e8ed-42df-9129-bfcb26fd3cca" />
+<img width="1082" height="381" alt="Code run " src="https://github.com/user-attachments/assets/f603c96b-c8eb-43dc-a7c8-d2c345eaac2f" />
 #  AI-Powered Healthcare Diagnosis Assistant
 
 ##  Project Overview
